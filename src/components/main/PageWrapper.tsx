@@ -23,13 +23,13 @@ type HeadMetaProps = {
 const MAX_TITLE_LEN = 45
 const MAX_DESC_LEN = 300
 
-const SITE_NAME = 'Subsocial Network'
+const SITE_NAME = 'BUNBi Network'
 
 export const DEFAULT_TITLE =
-  'Subsocial - Decentralized social network on Polkadot & IPFS'
+  'BUNBi - social network'
 
 export const DEFAULT_DESC =
-  'Subsocial is a Polkadot ecosystem project supported by Web3 Foundation. ' +
+  'subsocial is a Polkadot ecosystem project supported by Web3 Foundation. ' +
   'Subsocial follows SoFi (social finance) principles to bring DeFi features to social networking.'
 
 export const createTitle = (title: string) => {
@@ -38,7 +38,7 @@ export const createTitle = (title: string) => {
   }
 
   const leftPart = summarize(title, { limit: MAX_TITLE_LEN })
-  return `${leftPart} - Subsocial`
+  return `${leftPart} - BUNBi`
 }
 
 const DEFAULT_SUBSOCIAL_IMG = '/subsocial-sign.png'

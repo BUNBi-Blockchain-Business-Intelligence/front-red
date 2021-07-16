@@ -29,7 +29,7 @@ const InnerMenu = () => {
         </Button>
         <Link href='/' as='/'>
           <a className='DfBrand'>
-            <img src={logoImg} alt='Subsocial' />
+            <img src={logoImg} alt='BUNBi' />
           </a>
         </Link>
       </div>

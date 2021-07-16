@@ -4,12 +4,14 @@ RUN apt-get update \
     && apt-get install -y libusb-1.0-0-dev build-essential git curl gnupg gcc-4.8 g++-4.8 \
     && export CXX=g++-4.8
 
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get install -y nodejs
+#RUN apt-get install -y npm
 RUN npm install yarn -g
 
 COPY package.json yarn.lock* ./
-RUN yarn install --no-optional
+#RUN yarn install --no-optional
+RUN node --version
 
 WORKDIR /app
 COPY . .
